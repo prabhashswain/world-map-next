@@ -1,15 +1,18 @@
 import React from 'react'
 import styles from './Country.module.css'
 import Layout from '../../components/Layout/Layout'
+import Image from 'next/image'
 
 const country = ({ country }) => {
     return (
         <Layout title={country.name}>
             <div>
             <div className={styles.overview_panel}>
-                <img 
+                <Image
                 src={country.flag} 
                 alt={country.name} 
+                width="1000"
+                height="500"
                 />
                 <h1 className={styles.overview_name}>{country.name}</h1>
                 <div className={styles.overview_region}>{country.region}</div>
