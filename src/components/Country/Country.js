@@ -14,9 +14,9 @@ const Country = ({ countries }) => {
                 </button>
             </div>
             {countries.map((country) => (
-                <Link href={`/country/${country.alpha3Code}`}>
+                <Link href={`/country/${country.alpha3Code}`} key={country.alpha3Code}>
 
-                    <div className={styles.row} key={country.alpha3Code} >
+                    <div className={styles.row} >
                         <div className={styles.name}>{country.name}</div>
                         <div className={styles.population}>{country.population}</div>
                     </div>

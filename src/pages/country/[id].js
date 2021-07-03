@@ -7,7 +7,10 @@ const country = ({ country }) => {
         <Layout title={country.name}>
             <div>
             <div className={styles.overview_panel}>
-                <img src={country.flag} alt={country.name} />
+                <img 
+                src={country.flag} 
+                alt={country.name} 
+                />
                 <h1 className={styles.overview_name}>{country.name}</h1>
                 <div className={styles.overview_region}>{country.region}</div>
             
