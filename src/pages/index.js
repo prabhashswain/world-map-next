@@ -18,7 +18,7 @@ export default function Home({ countries }) {
     setKeyword(e.target.value.toLowerCase())
   }
   return (
-    <Layout title="World Rank" >
+    <Layout title="World Rank Map" >
       <div className={styles.count}>Found {countries.length} countries</div>
       <Search placeholder="Filter by Name, Region or SubRegion" onChange={onInpuChange} />
       <Country countries={filterCountry} />
